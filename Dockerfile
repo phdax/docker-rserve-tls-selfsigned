@@ -9,7 +9,7 @@ openssl x509 -in /opt/r/Rserve.csr -days 3650 -req -signkey /opt/r/Rserve.key > 
 openssl x509 -in /opt/r/Rserve.crt -out /opt/r/Rserve.der -outform DER && \
 openssl x509 -in /opt/r/Rserve.der -inform DER -out /opt/r/Rserve.pem -outform pem
 
-RUN wget -O /opt/r/Rserve.zip https://www.rforge.net/Rserve/snapshot/Rserve_1.8-4.tar.gz && \
+RUN wget -O /opt/r/Rserve.zip https://www.rforge.net/Rserve/snapshot/Rserve_1.8-6.tar.gz && \
 R CMD INSTALL /opt/r/Rserve.zip && \
 Rscript -e '.libPaths("./opt/r/lib")' && \
 rm -f /opt/r/Rserve.zip
