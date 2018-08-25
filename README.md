@@ -1,7 +1,7 @@
 docker-rserve-tls-selfsigned
 =============
 
-[![](https://images.microbadger.com/badges/version/phdax/docker-rserve-tls-selfsigned.svg)](http://microbadger.com/images/phdax/docker-rserve-tls-selfsigned)
+[![Docker Automated build](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/phdax/docker-rserve-tls-selfsigned/)
 
 Rserve with TLS/SSL connection mode by self-signed certificate
 
@@ -19,7 +19,7 @@ phdax/docker-rserve
 ```
 
 ## Usage
-### connection
+### connect
 user : admin \
 pass : admin \
 port : 6313
@@ -28,3 +28,6 @@ port : 6313
 docker copy [CONTAINER TAG]:/opt/r/Rserve.crt .
 docker copy [CONTAINER TAG]:/opt/r/Rserve.pem .
 ```
+
+## License
+[GPL2](https://github.com/phdax/docker-rserve-tls-selfsigned/blob/master/LICENSE)
