@@ -1,7 +1,5 @@
 FROM rocker/r-base:latest
 
-LABEL maintainer="phdax <pophitdax@gmail.com>"
-
 LABEL org.label-schema.license="GPL-2.0" \
       org.label-schema.vcs-url="https://github.com/phdax/docker-rserve-tls-selfsigned" \
       org.label-schema.vendor="" \
